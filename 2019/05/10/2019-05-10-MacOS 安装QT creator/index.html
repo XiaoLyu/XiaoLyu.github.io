@@ -11,7 +11,7 @@
 
     <title>
         
-        
+        MacOS 安装QT creator - undefined
         
     </title>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li class="active">
+            <li>
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>HOME</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装PyQt5"><span class="toc-text">1 安装PyQt5</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-在Qt-Creator改Qt-Versions"><span class="toc-text">2 在Qt Creator改Qt Versions</span></a></li></ol>
+</div>
+    
 </div>
 
 
@@ -112,69 +116,45 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 360px">
-    
-    <div class="post-preview">
-        <div class="post-time">2019-06-13</div>
-        <div class="post-info">
-            <a href="/2019/06/13/hello-world/">
-                <h3>
-                    Hello World
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
+
+
+<div class="post-container">
+    <div class="post-title">
+        MacOS 安装QT creator
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-06-11</div>
-        <div class="post-info">
-            <a href="/2019/06/11/2019-06-11-常用命令 for Mac/">
-                <h3>
-                    常用命令 for Mac
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-05-10 00:00:00</span></span>
+        
+        
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-06-11</div>
-        <div class="post-info">
-            <a href="/2019/06/11/2019-06-11-Jekyll+GitHub搭建个人博客/">
-                <h3>
-                    Jekyll+GitHub搭建个人博客
-                </h3>
-            </a>
-            <p>
-                
-            </p>
+    <div class="post-content ">
+        <h3 id="1-安装PyQt5"><a href="#1-安装PyQt5" class="headerlink" title="1 安装PyQt5"></a>1 安装PyQt5</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install qt</span><br><span class="line">brew cask install qt-creator</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-在Qt-Creator改Qt-Versions"><a href="#2-在Qt-Creator改Qt-Versions" class="headerlink" title="2 在Qt Creator改Qt Versions"></a>2 在Qt Creator改Qt Versions</h3><p>Preferences-buid&amp;run-Qt Versions-Add 添加<br>按 shift + cmd + g 然后输入 /usr/local/Cellar/qt，在版本号/bin 文件夹里找找 qmake</p>
+<p>然后在preferences-buid&amp;run-kits-desktop-Qt version添加qt</p>
+<p>命令行中： open .bash_profile添加:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias brewski=&quot;brew update &amp;&amp; brew upgrade &amp;&amp; brew cleanup &amp;&amp; brew cask cleanup; brew doctor&quot;</span><br></pre></td></tr></table></figure>
+
+<p>如果遇到错误：</p>
+<p>failed to parse default search paths from compiler output</p>
+<p>解决办法：</p>
+<p>kits中compiler c和C++都改成clang</p>
+
+        
+        <br>
+        <div id="comment-container">
         </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-05-10</div>
-        <div class="post-info">
-            <a href="/2019/05/10/2019-05-10-MacOS 安装QT creator/">
-                <h3>
-                    MacOS 安装QT creator
-                </h3>
-            </a>
-            <p>
-                
-            </p>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
         </div>
+
     </div>
-    
 </div>
-<ul class="pager">
-    
-    
-</ul>
 
     </div>
 </div>
@@ -222,7 +202,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
