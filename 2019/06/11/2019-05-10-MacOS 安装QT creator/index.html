@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>MacOS 安装QT creator | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1 安装PyQt5:123brew install qtbrew cask install qt-creator  2 在Qt Creator改Qt Versions:Preferences-buid&amp;amp;run-Qt Versions-Add 添加按 shift + cmd + g 然后输入 /usr/local/Cellar/qt，在版本号/bin 文件夹里找找 qmake 然后在pref">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MacOS 安装QT creator">
+<meta property="og:url" content="http://yoursite.com/2019/06/11/2019-05-10-MacOS 安装QT creator/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1 安装PyQt5:123brew install qtbrew cask install qt-creator  2 在Qt Creator改Qt Versions:Preferences-buid&amp;amp;run-Qt Versions-Add 添加按 shift + cmd + g 然后输入 /usr/local/Cellar/qt，在版本号/bin 文件夹里找找 qmake 然后在pref">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-11T15:03:15.595Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MacOS 安装QT creator">
+<meta name="twitter:description" content="1 安装PyQt5:123brew install qtbrew cask install qt-creator  2 在Qt Creator改Qt Versions:Preferences-buid&amp;amp;run-Qt Versions-Add 添加按 shift + cmd + g 然后输入 /usr/local/Cellar/qt，在版本号/bin 文件夹里找找 qmake 然后在pref">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2019-05-10-MacOS 安装QT creator" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/11/2019-05-10-MacOS 安装QT creator/" class="article-date">
+  <time datetime="2019-06-11T15:03:15.595Z" itemprop="datePublished">2019-06-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MacOS 安装QT creator
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-安装PyQt5"><a href="#1-安装PyQt5" class="headerlink" title="1 安装PyQt5:"></a>1 安装PyQt5:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew install qt</span><br><span class="line"></span><br><span class="line">brew cask install qt-creator</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-在Qt-Creator改Qt-Versions"><a href="#2-在Qt-Creator改Qt-Versions" class="headerlink" title="2 在Qt Creator改Qt Versions:"></a>2 在Qt Creator改Qt Versions:</h3><p>Preferences-buid&amp;run-Qt Versions-Add 添加<br>按 shift + cmd + g 然后输入 /usr/local/Cellar/qt，在版本号/bin 文件夹里找找 qmake</p>
+<p>然后在preferences-buid&amp;run-kits-desktop-Qt version添加qt</p>
+<p>命令行中： open .bash_profile添加:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias brewski=&quot;brew update &amp;&amp; brew upgrade &amp;&amp; brew cleanup &amp;&amp; brew cask cleanup; brew doctor&quot;</span><br></pre></td></tr></table></figure>
+
+<p>如果遇到错误：</p>
+<p>failed to parse default search paths from compiler output</p>
+<p>解决办法：</p>
+<p>kits中compiler c和C++都改成clang</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/06/11/2019-05-10-MacOS 安装QT creator/" data-id="cjwu2w5e90000dfo0gcdog3id" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/06/11/2019-06-11-常用命令 for Mac/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          常用命令 for Mac
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/06/11/2019-06-11-Jekyll+GitHub搭建个人博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Jekyll+GitHub搭建个人博客</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/06/13/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/11/2019-06-11-常用命令 for Mac/">常用命令 for Mac</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/11/2019-05-10-MacOS 安装QT creator/">MacOS 安装QT creator</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/11/2019-06-11-Jekyll+GitHub搭建个人博客/">Jekyll+GitHub搭建个人博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
