@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、安装jekyll"><span class="toc-text">一、安装jekyll</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、jekyll主题选择"><span class="toc-text">二、jekyll主题选择</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、配置jekyll-GitPage"><span class="toc-text">三、配置jekyll, GitPage</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装jekyll"><span class="toc-text">安装jekyll</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jekyll主题选择"><span class="toc-text">jekyll主题选择</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置jekyll-GitPage"><span class="toc-text">配置jekyll, GitPage</span></a></li></ol>
 </div>
     
 </div>
@@ -137,7 +137,7 @@
 </span>
 
     </div>
-    <div class="post-content ">
+    <div class="post-content no-indent">
         <p>花了好多天，终于算勉强搭好了个人博客。这里选用的是Jekyll。Jekyll, transform your plain text into static websites and blogs.</p>
 <p>大概的步骤：</p>
 <ul>
@@ -148,7 +148,7 @@
 <li>修改jekyll模板</li>
 <li>GitHub上建立仓库，commit到GitHub上</li>
 </ul>
-<h1 id="一、安装jekyll"><a href="#一、安装jekyll" class="headerlink" title="一、安装jekyll"></a>一、安装jekyll</h1><p>Install a full Ruby development environment and install Jekyll and bundler gems. 按照以下步骤来，<a href="https://jekyllrb.com/docs/installation/" target="_blank" rel="noopener">https://jekyllrb.com/docs/installation/</a></p>
+<h1 id="安装jekyll"><a href="#安装jekyll" class="headerlink" title="安装jekyll"></a>安装jekyll</h1><p>Install a full Ruby development environment and install Jekyll and bundler gems. 按照以下步骤来，<a href="https://jekyllrb.com/docs/installation/" target="_blank" rel="noopener">https://jekyllrb.com/docs/installation/</a></p>
 <p>记住要在命令行里open .bash_profile添加path！</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Ruby path</span><br><span class="line">export PATH=/usr/local/opt/ruby/bin:$PATH</span><br><span class="line">export PATH=$HOME/.gem/ruby/2.6.9/bin:$PATH</span><br></pre></td></tr></table></figure>
 
@@ -161,11 +161,11 @@
 
 <p>source源有可能变化，注意更改。可以用bundler -v 和 jekyll -v查看它们的版本。</p>
 <p>jekyll server启动起来之后，就可以在本地修改之后就查看效果了。可以看到server address：<a href="http://127.0.0.1:4000/" target="_blank" rel="noopener">http://127.0.0.1:4000/</a> （后面有你设置的名称）</p>
-<h1 id="二、jekyll主题选择"><a href="#二、jekyll主题选择" class="headerlink" title="二、jekyll主题选择"></a>二、jekyll主题选择</h1><p>我是在<a href="http://jekyllthemes.org/" target="_blank" rel="noopener">Jekyll theme</a>挑选jekyll模板的，根据自己需求修改。</p>
+<h1 id="jekyll主题选择"><a href="#jekyll主题选择" class="headerlink" title="jekyll主题选择"></a>jekyll主题选择</h1><p>我是在<a href="http://jekyllthemes.org/" target="_blank" rel="noopener">Jekyll theme</a>挑选jekyll模板的，根据自己需求修改。</p>
 <p>jekyll目录结构：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_posts 博客内容</span><br><span class="line">_layouts 网页排版</span><br><span class="line">_sites 最终生成的静态网页</span><br><span class="line">_config.yml 配置信息，这里修改</span><br><span class="line">assets css images，js</span><br></pre></td></tr></table></figure>
 
-<h1 id="三、配置jekyll-GitPage"><a href="#三、配置jekyll-GitPage" class="headerlink" title="三、配置jekyll, GitPage"></a>三、配置jekyll, GitPage</h1><ol>
+<h1 id="配置jekyll-GitPage"><a href="#配置jekyll-GitPage" class="headerlink" title="配置jekyll, GitPage"></a>配置jekyll, GitPage</h1><ol>
 <li>GitHub创建仓库：(和用户名相同).github.io</li>
 <li>可以用GitHub Desktop clone 到本地，将修改好的模板覆盖到clone的文件中。</li>
 <li>commit到GitHub上，要等一会才能看到效果。  </li>
