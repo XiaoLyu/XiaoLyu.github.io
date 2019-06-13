@@ -365,4 +365,3 @@ if(donateButton) {
 
     donateImg.src = donateImg.dataset.src
 }
-
